@@ -159,7 +159,7 @@ public class TransactionController {
             transactionFormInclude.getChildren().add(form);
         } catch (IOException e) {
             e.printStackTrace();
-            showAlert("Fehler", "Formular konnte nicht geladen werden.");
+            showAlert("Error", "Form could not be loaded.");
         }
     }
 
@@ -188,7 +188,7 @@ public class TransactionController {
 
         } catch (IOException e) {
             e.printStackTrace();
-            showAlert("Fehler", "Dialog konnte nicht geladen werden.");
+            showAlert("Error", "Dialog could not be loaded.");
         }
     }
 
@@ -221,7 +221,7 @@ public class TransactionController {
         if (incomeDate.getValue() == null) {
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.setHeaderText(null);
-            alert.setContentText("Datum auswählen.");
+            alert.setContentText("Choose date.");
             alert.showAndWait();
             return;
         }
@@ -234,9 +234,9 @@ public class TransactionController {
 
         if (id != -1) {
             addToBalance(amount);
-            System.out.println("Einkommen erfolgreich hinzugefügt mit ID: " + id);
+            System.out.println("Income added successfully with ID: " + id);
         } else {
-            showAlert("Fehler", "Das Einkommen konnte nicht hinzugefügt werden.");
+            showAlert("Error", "The income could not be added.");
         }
 
         incomeAmount.setText(null);
