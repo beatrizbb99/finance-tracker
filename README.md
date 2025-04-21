@@ -24,10 +24,6 @@ Finance Tracker is a simple application to manage and track your financial trans
     ```bash
     cd finance-tracker
     ```
-3. Build the project:
-    ```bash
-    mvn javafx:run
-    ```
 
 ### Configuration
 Create a `db.properties` file in the `resources` directory with the following content:
@@ -42,5 +38,5 @@ Replace `your_username` and `your_password` with your Postgres database credenti
 ### Running the Application
 Run the application using:
 ```bash
-mvn spring-boot:run
+mvn javafx:run
 ```
