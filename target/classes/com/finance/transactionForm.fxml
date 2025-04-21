@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.Pane?>
+
+<Pane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.finance.controller.TransactionFormController"
+      prefHeight="310.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 5;">
+    <children>
+        <Label layoutX="25.0" layoutY="79.0" text="Date" />
+        <DatePicker fx:id="datePicker" layoutX="24.0" layoutY="98.0" prefWidth="155.0" />
+
+        <Label layoutX="26.0" layoutY="189.0" text="Category" />
+        <SplitMenuButton fx:id="categoryField" layoutX="24.0" layoutY="209.0" text="Select Category" />
+        
+        <Label layoutX="26.0" layoutY="134.0" text="Sum" />
+        <TextField fx:id="amountField" layoutX="24.0" layoutY="153.0" prefWidth="155.0" />
+
+        <Label layoutX="24.0" layoutY="25.0" text="Description" />
+        <TextField fx:id="descriptionField" layoutX="24.0" layoutY="44.0" prefWidth="155.0" />
+
+        <Button fx:id="saveButton" layoutX="50.0" layoutY="264.0" onAction="#onSave"
+                prefWidth="99.0" text="Add Expense" />
+    </children>
+</Pane>

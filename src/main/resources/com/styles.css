@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url("fonts/Poppins-Regular.ttf");
+}
+
+@font-face {
+    font-family: 'Poppins Medium';
+    src: url('fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins Bold';
+    src: url('fonts/Poppins-Bold.ttf');
+}
+
+
+.root {
+    -fx-font-family: 'Poppins', 'Arial', sans-serif;
+}
+
+.text-field .date-picker {
+    -fx-background-color: white;
+    -fx-border-color: #121212;
+    -fx-border-radius: 2px;
+    -fx-border-width: 0.5px;
+}
+
+.date-picker .arrow-button, .split-menu-button .arrow-button {
+    -fx-background-color: white;
+    -fx-border-color: #121212;
+    -fx-border-width: 0.2px;
+}
+
+.split-menu-button .label {
+    -fx-background-color: white;
+}
+
+.table-view {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header {
+    -fx-background-color: #404250;
+    -fx-border-color: #404250 #404250 #5A6ACF #404250;
+    
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell:even {
+    -fx-background-color: #ffffff;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #dcdedf;
+}
+
+.sidebar-label {
+    -fx-text-fill: #5A6ACF;
+    -fx-cursor: hand;    
+    -fx-padding: 5px;
+    -fx-background-radius: 5px;
+}
+
+.sidebar-label:hover {
+    -fx-background-color: rgba(112, 127, 221, 0.10);
+
+}
+
+.sidebar-label.selected {
+    -fx-text-fill: white;
+    -fx-background-color: #707FDD;
+}
+
+
+
